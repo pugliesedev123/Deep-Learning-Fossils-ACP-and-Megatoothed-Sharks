@@ -1,0 +1,16 @@
+[default]
+extend-ignore-identifiers-re = [
+    "AttributeID.*Supress.*",
+]
+
+[default.extend-identifiers]
+AttributeIDSupressMenu = "AttributeIDSupressMenu"
+
+[default.extend-words]
+FPR = "FPR"
+fpr = "fpr"
+
+[files]
+extend-exclude = [
+    ".gitignore",
+]
