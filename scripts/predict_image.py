@@ -178,7 +178,7 @@ def main():
     if not os.path.isdir(args.example_dir):
         raise FileNotFoundError(f"Input folder not found: {args.example_dir}")
     
-    # With gradiant calculation disabled, walk directories and run predictions.
+    # With gradient calculation disabled, walk directories and run predictions.
     with torch.no_grad():
         for root, _, files in os.walk(args.example_dir):
             parent_folder = os.path.basename(root)

@@ -166,7 +166,7 @@ def build_combined_and_val(input_config: str, exclude_classes: bool, include_con
 
 # Returns model, embedder, and optimizer for resnet models
 def build_resnet_model(model_name: str, num_classes: int, use_pretrain: bool):
-    model_name = model_name.lower() #case insensitve
+    model_name = model_name.lower() #case insensitive
 
     if model_name == "resnet18":
         model = models.resnet18(pretrained=use_pretrain)
